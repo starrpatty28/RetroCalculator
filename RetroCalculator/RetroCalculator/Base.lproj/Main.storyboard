@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12113" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,15 +18,17 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space-bg" translatesAutoresizingMaskIntoConstraints="NO" id="X8n-aK-6au">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="bih-ic-agI">
-                                <rect key="frame" x="0.0" y="511" width="320" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="bih-ic-agI">
+                                <rect key="frame" x="0.0" y="423" width="320" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="PEC-vk-aa8"/>
+                                </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="ddK-7R-GCF">
                                 <rect key="frame" x="24" y="28" width="272" height="70"/>
@@ -36,14 +38,47 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backpanel" translatesAutoresizingMaskIntoConstraints="NO" id="EUT-y1-gjI">
-                                <rect key="frame" x="16" y="106" width="288" height="438"/>
+                                <rect key="frame" x="16" y="100" width="288" height="366"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="xW3-CN-zOZ">
+                                <rect key="frame" x="49" y="117" width="225" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IqG-pb-ylP">
+                                        <rect key="frame" x="0.0" y="0.0" width="69" height="68"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="68" id="4QY-v5-h5Z"/>
+                                            <constraint firstAttribute="width" constant="69" id="HMa-AW-LWb"/>
+                                        </constraints>
+                                        <state key="normal" image="7"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTp-cn-AbC">
+                                        <rect key="frame" x="78" y="0.0" width="69" height="68"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="68" id="7NY-RT-ctH"/>
+                                            <constraint firstAttribute="width" constant="69" id="SGr-8f-03f"/>
+                                        </constraints>
+                                        <state key="normal" image="8"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lp-vM-ban">
+                                        <rect key="frame" x="156" y="0.0" width="69" height="68"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="69" id="Fv0-lM-btT"/>
+                                            <constraint firstAttribute="height" constant="68" id="lZZ-eN-wtS"/>
+                                        </constraints>
+                                        <state key="normal" image="9"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bih-ic-agI" secondAttribute="bottom" id="8VW-qd-8On"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="X8n-aK-6au" secondAttribute="bottom" id="ABo-Cm-bii"/>
                             <constraint firstItem="X8n-aK-6au" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Blx-el-Cs1"/>
+                            <constraint firstItem="bih-ic-agI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Lko-me-bdn"/>
+                            <constraint firstAttribute="trailing" secondItem="bih-ic-agI" secondAttribute="trailing" id="Suu-iA-3pL"/>
                             <constraint firstItem="X8n-aK-6au" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eLj-0s-hra"/>
                             <constraint firstAttribute="trailing" secondItem="X8n-aK-6au" secondAttribute="trailing" id="lpY-ye-r6F"/>
                         </constraints>
@@ -51,10 +86,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116.25" y="123.59154929577466"/>
+            <point key="canvasLocation" x="116.25" y="122.5"/>
         </scene>
     </scenes>
     <resources>
+        <image name="7" width="111" height="114"/>
+        <image name="8" width="111" height="114"/>
+        <image name="9" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
         <image name="counter" width="516" height="133"/>
         <image name="ground" width="888" height="72"/>
