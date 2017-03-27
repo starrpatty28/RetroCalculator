@@ -38,6 +38,20 @@
                                     <constraint firstAttribute="height" constant="68" id="k0d-Ht-mP0"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58A-li-fUQ">
+                                <rect key="frame" x="38" y="52" width="245" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpanel" translatesAutoresizingMaskIntoConstraints="NO" id="Iuj-qH-1Bo">
+                                <rect key="frame" x="39" y="110" width="243" height="422"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="422" id="Cp8-Bh-12Q"/>
+                                    <constraint firstAttribute="width" constant="243" id="WaA-Il-F3P"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -46,9 +60,11 @@
                             <constraint firstItem="Isl-4n-W8u" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="N74-hf-93C"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Pgx-RI-vji" secondAttribute="bottom" id="TW4-Hn-NKv"/>
                             <constraint firstItem="Pgx-RI-vji" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YB7-SA-0Dn"/>
+                            <constraint firstItem="Iuj-qH-1Bo" firstAttribute="top" secondItem="Isl-4n-W8u" secondAttribute="bottom" constant="14" id="asd-3F-16g"/>
                             <constraint firstAttribute="trailing" secondItem="HCb-kM-VYv" secondAttribute="trailing" id="cqq-a0-Bbv"/>
                             <constraint firstItem="Isl-4n-W8u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dms-1J-m2i"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HCb-kM-VYv" secondAttribute="bottom" id="oI1-1R-8OK"/>
+                            <constraint firstItem="Iuj-qH-1Bo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qHU-8g-o05"/>
                             <constraint firstItem="HCb-kM-VYv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tX8-oe-AAx"/>
                         </constraints>
                     </view>
@@ -59,6 +75,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backpanel" width="620" height="938"/>
         <image name="counter" width="516" height="133"/>
         <image name="ground" width="888" height="72"/>
         <image name="space-bg-1" width="988" height="946"/>
