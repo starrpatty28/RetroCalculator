@@ -76,6 +76,7 @@ class ViewController: UIViewController {
     
     @IBAction func onEqualPressed(sender: AnyObject) {
         processOperation(operation: currentOperation)
+        currentOperation = Operation.Empty
     }
     
  
