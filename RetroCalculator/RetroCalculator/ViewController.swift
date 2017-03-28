@@ -14,6 +14,18 @@ class ViewController: UIViewController {
     
     
     var btnSound: AVAudioPlayer!
+    
+    enum Operation: String {
+        case Divide = "/"
+        case Multiply = "*"
+        case Subtract = "_"
+        case Addition = "+"
+        
+        
+    }
+    
+    var runningNumber = ""  //iniialize as a empty string
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +44,9 @@ class ViewController: UIViewController {
     
     @IBAction func numberPressed(sender: UIButton) {
         playSound()
+        
+        runningNumber += "\(sender.tag)"  //everytime you hit a number it will append to the running number=(result)
+        outputLbl.text = runningNumber    //how you get the display of the runningNumber
         
     }
     
