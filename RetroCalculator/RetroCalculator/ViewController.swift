@@ -87,7 +87,7 @@ class ViewController: UIViewController {
         btnSound.play()
     }
     
-    func processOperation(operation: Operation) {     //this fnction process the operations
+    func processOperation(operation: Operation) {     //this fnction process the operationsokay
         playSound()
         if currentOperation != Operation.Empty {
             
