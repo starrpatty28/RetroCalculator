@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let path = Bundle.main.path(forResource: "btn", ofType: "wav")  //creating a path to the Bundle where the file lives (its returing a string and we need to make it a url)
-    let soundURL = URL(fileURLWithPath: path!)
+        let soundURL = URL(fileURLWithPath: path!)
         
         do {
            try btnSound = AVAudioPlayer(contentsOf: soundURL)
