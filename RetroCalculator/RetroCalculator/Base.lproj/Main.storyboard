@@ -261,6 +261,9 @@
                             <constraint firstItem="HCb-kM-VYv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tX8-oe-AAx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="outputLbl" destination="58A-li-fUQ" id="5KA-55-maN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

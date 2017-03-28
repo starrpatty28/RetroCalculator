@@ -10,6 +10,8 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
+    @IBOutlet weak var outputLbl: UILabel!
+    
     
     var btnSound: AVAudioPlayer!
 
