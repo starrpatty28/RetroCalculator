@@ -24,12 +24,40 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchbg" translatesAutoresizingMaskIntoConstraints="NO" id="rqo-7w-ITH">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchground" translatesAutoresizingMaskIntoConstraints="NO" id="g9E-zE-fYe">
+                                <rect key="frame" x="0.0" y="450" width="320" height="118"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="bqm-Vf-bgY"/>
+                                    <constraint firstAttribute="height" constant="118" id="qj1-Wp-KJT"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Retro-Calc" translatesAutoresizingMaskIntoConstraints="NO" id="LRU-F3-85u">
+                                <rect key="frame" x="8" y="45" width="304" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="HLI-i4-7gB"/>
+                                    <constraint firstAttribute="width" constant="304" id="rxR-te-hjU"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot" translatesAutoresizingMaskIntoConstraints="NO" id="kz5-rS-JcU">
+                                <rect key="frame" x="40" y="176" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="9wg-RP-w8T"/>
+                                    <constraint firstAttribute="width" constant="240" id="LyZ-aQ-lmJ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="rqo-7w-ITH" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="7tj-Di-IPD"/>
+                            <constraint firstItem="g9E-zE-fYe" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="BOG-0a-KK4"/>
+                            <constraint firstAttribute="trailing" secondItem="g9E-zE-fYe" secondAttribute="trailing" id="CjK-4X-izm"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="g9E-zE-fYe" secondAttribute="bottom" id="E4g-dl-qp7"/>
                             <constraint firstItem="rqo-7w-ITH" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="HGV-bT-iMd"/>
+                            <constraint firstItem="LRU-F3-85u" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="25" id="LrY-TV-vSJ"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="rqo-7w-ITH" secondAttribute="bottom" id="REt-cn-gfo"/>
+                            <constraint firstItem="kz5-rS-JcU" firstAttribute="top" secondItem="LRU-F3-85u" secondAttribute="bottom" constant="73" id="YNe-is-m8R"/>
+                            <constraint firstItem="LRU-F3-85u" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="aU1-Y4-1Is"/>
+                            <constraint firstItem="kz5-rS-JcU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="fp9-Cr-f03"/>
                             <constraint firstAttribute="trailing" secondItem="rqo-7w-ITH" secondAttribute="trailing" id="ni1-Yi-ANj"/>
                         </constraints>
                     </view>
@@ -40,6 +68,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Retro-Calc" width="755" height="111"/>
         <image name="launchbg" width="1433" height="957"/>
+        <image name="launchground" width="999" height="225"/>
+        <image name="robot" width="786" height="402"/>
     </resources>
 </document>
