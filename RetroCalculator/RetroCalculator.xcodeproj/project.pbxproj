@@ -12,7 +12,7 @@
 		819527121E8996D700BC1EA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 819527101E8996D700BC1EA7 /* Main.storyboard */; };
 		819527141E8996D700BC1EA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 819527131E8996D700BC1EA7 /* Assets.xcassets */; };
 		819527171E8996D700BC1EA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 819527151E8996D700BC1EA7 /* LaunchScreen.storyboard */; };
-		8195271F1E8ACA1E00BC1EA7 /* minecraft.zip in Resources */ = {isa = PBXBuildFile; fileRef = 8195271E1E8ACA1E00BC1EA7 /* minecraft.zip */; };
+		819527211E8ACAE000BC1EA7 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 819527201E8ACAE000BC1EA7 /* Minecraft.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		819527131E8996D700BC1EA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		819527161E8996D700BC1EA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		819527181E8996D700BC1EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8195271E1E8ACA1E00BC1EA7 /* minecraft.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = minecraft.zip; sourceTree = "<group>"; };
+		819527201E8ACAE000BC1EA7 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 		8195270B1E8996D700BC1EA7 /* RetroCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				8195271E1E8ACA1E00BC1EA7 /* minecraft.zip */,
+				819527201E8ACAE000BC1EA7 /* Minecraft.ttf */,
 				8195270C1E8996D700BC1EA7 /* AppDelegate.swift */,
 				8195270E1E8996D700BC1EA7 /* ViewController.swift */,
 				819527101E8996D700BC1EA7 /* Main.storyboard */,
@@ -129,8 +129,8 @@
 			files = (
 				819527171E8996D700BC1EA7 /* LaunchScreen.storyboard in Resources */,
 				819527141E8996D700BC1EA7 /* Assets.xcassets in Resources */,
+				819527211E8ACAE000BC1EA7 /* Minecraft.ttf in Resources */,
 				819527121E8996D700BC1EA7 /* Main.storyboard in Resources */,
-				8195271F1E8ACA1E00BC1EA7 /* minecraft.zip in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
